@@ -7,13 +7,13 @@ stage("Build")
 steps
 {
 echo "Building the Project"
-sh "mvn clean compile"
+sh 'mvn clean compile'
 }
 }
 stage("Testing the code"){
 steps{
 echo "Testing the code"
-sh "mvn test"
+sh 'mvn test'
 }
 }
 stage("Compiling the code"){
